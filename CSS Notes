@@ -1,0 +1,11 @@
+Specifity:
+- CSS declarations that are more specific will take precedence over less specific ones. Inline styles take precedence over selectors:
+  - ID Selectors (most specific selector)
+  - Class Selectors
+  - Type Selectors
+
+Inheritance:
+- Refers to certain CSS properties that are inherited by that element's descendants. 
+
+Rule Order:
+- Whichever rule was the last defined is the winner
