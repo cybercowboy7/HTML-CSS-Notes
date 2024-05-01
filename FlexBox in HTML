@@ -1,0 +1,18 @@
+- New way to arrange items into rows or columns
+
+flex container:
+- elemenet has the display: flex on it
+
+flex shorthand:
+- flex declaration is a shorthand for;
+  flex-grow
+  flex-shrink
+  flex-basis
+
+Example: Below equates to flex-grow: 1, flex-shrink: 1, flex-basis: 0
+  div {
+    flex: 1;
+}
+
+- When flex: 1 is applied, every div grows the same amount. 
+If flex: 2 is added, that the div would gow to 2x the size of the others
