@@ -1,3 +1,7 @@
+Resources for Flexbox ideas:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox
+https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
+
 - New way to arrange items into rows or columns
 
 flex container:
@@ -16,3 +20,32 @@ Example: Below equates to flex-grow: 1, flex-shrink: 1, flex-basis: 0
 
 - When flex: 1 is applied, every div grows the same amount. 
 If flex: 2 is added, that the div would gow to 2x the size of the others
+
+Axes of a Flex Container:
+- Default direction for a flex container is horizontal, or row, but you can 
+change the direction to vertical, or column.
+- Example:
+
+    .flex-container {
+      flex-direction: column;
+    }
+
+Justify-content
+- aligns items across the main axis
+example:
+.container {
+  height: 140px;
+  padding: 16px;
+  background: plum;
+  border: 4px solid indigo;
+  display: flex;
+  justify-content: space-between
+}
+
+- this would spit the items up and align them evenly across the main axis
+
+Gap property in flex boxes
+- Adds a specified space between flex items
+- 
+
+
