@@ -7,45 +7,68 @@ https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
 flex container:
 - elemenet has the display: flex on it
 
+flex container properties:
+- flex-direction: Defines in which direction the container wants to stack the flex items
+  - column: stacks them vertically
+  - column-reverse: stacs them vertically but from bottom to top
+  - row: stacks the items horizontall
+  - row-reverse: stacks items horizontally but from right to left
+
+- flex-wrap: Specifies whether the flex items should wrap or not
+  - nowrap: Flex items will not wrap (this is default)
+  - wrap-reverse: items will wrap but in reverse order
+
+- flex-flow: shorthand for setting both the flex-direction and flex-wrap properties
+  - row wrap: sets the direction to row and wrap to wrap
+
+- justify-content: Used to align the flex items
+  - center: aligns the flex items at the center of the container
+  - flex-start: aligns the flex items at the beginning of the container (this is default)
+  - flex-end: aligns the items at the end of the container
+  - space-around: displays the flex items with space before, between, and after the lines
+  - space-between: displays the flex items with the space between the lines
+
+- align-items: Used to alignn the flex items
+  - center: aligns items in the center of the container
+  - flex-start: aligns the flex items at the top of the container
+  - flex-end: aligns the flex items at the bottom of the container
+  - stretch: stretches the flex items to fill the container (this is default)
+  - baselien: aligns the flex items such as their baseline aligns
+
+- align-content: Aligns the flex lines
+  - space-between: displays the flex lines with equal space between them
+  - space-around: displays the flex lines with space before, between, and after them
+  - stretch: stretches the flex lines to take up the remaining space (this is default)
+  - center: displays the flex lines in the middle of the container
+  - flex-start: displays the flex lines at the start of the container
+  - flex-end: displays the flex lines at the end of the container
+
 flex shorthand:
 - flex declaration is a shorthand for;
   flex-grow
   flex-shrink
   flex-basis
 
-Example: Below equates to flex-grow: 1, flex-shrink: 1, flex-basis: 0
-  div {
-    flex: 1;
-}
 
-- When flex: 1 is applied, every div grows the same amount. 
-If flex: 2 is added, that the div would gow to 2x the size of the others
+Flex item properties:
+- order: specifies the order of the flex items
+  - order value must be a number. Default is 0.
 
-Axes of a Flex Container:
-- Default direction for a flex container is horizontal, or row, but you can 
-change the direction to vertical, or column.
-- Example:
+- flex-grow: specifies how much a flex item will grow relative to the rest of the flex items
+  - value must be a number. Default is 0.
 
-    .flex-container {
-      flex-direction: column;
-    }
+- flex-shrink: specifies how much a flex item will shrink relative to the rest of the flex items
+  - value must be a number. Default is 1.
 
-Justify-content
-- aligns items across the main axis
-example:
-.container {
-  height: 140px;
-  padding: 16px;
-  background: plum;
-  border: 4px solid indigo;
-  display: flex;
-  justify-content: space-between
-}
+- flex-basis: specifies the initial length of flex item
+  - example flex-basis: 200px
 
-- this would spit the items up and align them evenly across the main axis
+- flex: shorthand for flex-grow, flex-shrink, and flex-basis
 
-Gap property in flex boxes
-- Adds a specified space between flex items
+- align-self: specifies the alignment for the selected item inside the flexible container
+  - Overrides container's align-items property
+  - example align-self: center/flex-start/flex-end etc.
+
 - 
 
 
